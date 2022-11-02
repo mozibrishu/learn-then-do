@@ -1,0 +1,80 @@
+:root {
+    --singleStairWidth: 30px;
+    --white: #ffffff;
+  }
+  
+  .container{
+    width: 600px;
+    height: 500px;
+    background-color: antiquewhite;
+    /* perspective: 300px; */
+    /* perspective-origin: 400px -400px ; */
+    /* transform-style: preserve-3d; */
+    padding: 50px;
+  }
+  
+  .font{
+    font-size: 50px;
+    overflow: hidden;
+    height: 60px;
+    width: 235px;
+    position: absolute;
+    border: 1px solid red;
+    text-align: center;
+    padding-left: 10px;
+  }
+  
+  .step1{
+    top: 0px;
+    /* transform: rotateX(0deg) rotateY(0deg) translateY(0px) translateZ(0px); */
+    /* transform: translate(); */
+  }
+  .step2{
+    top: 30px;
+    transform: rotateX(0deg) rotateY(0deg) translateY(0px) translateZ(0px);
+  
+  }
+  .step3{
+    top: 60px;
+  }
+  .step4{
+    top: 90px;
+  }
+  .step5{
+    top: 120px;
+  }
+  .step6{
+    top: 150px;
+  }
+  .stairs{
+    height: 300px;
+    width: 250px;
+    background-color: #00000000;
+    margin: 0 auto;
+    position: relative;
+    perspective: 300px;
+    perspective-origin: 400px -400px ;
+    transform-style: preserve-3d;
+  }
+
+  .stairs > .step1 {
+    transform: skew(60deg, -30deg) scaley(.6666666667) translate(-83px, -20px);
+  }
+  .stairs > .step2 {
+    transform: skew(0deg, -30deg) scaley(1.3333333333) translate(-71px, 19px);
+  }
+  .stairs > .step3 {
+    transform: skew(60deg, -30deg) scaley(.6666666667) translate(-101px, 57px);
+  }
+  .stairs > .step4 {
+    transform: skew(0deg, -30deg) scaley(1.3333333333) translate(0px, 96px);
+  }
+  .stairs > .step5 {
+    transform: skew(60deg, -30deg) scaley(.6666666667) translate(-119px, 134px);
+  }
+  .stairs > .step6 {
+    transform: skew(0deg, -30deg) scaley(1.3333333333) translate(72px, 173px);
+  }
+  .innerDiv{
+    position: absolute;
+  }
